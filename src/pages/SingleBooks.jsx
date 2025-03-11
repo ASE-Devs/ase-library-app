@@ -1,8 +1,12 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 const SingleBooks = () => {
   return (
-    <div>SingleBooks</div>
+    <div>
+      <h1>Single Books</h1>
+      <Footer/>
+    </div>
   )
 }
 
