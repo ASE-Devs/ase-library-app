@@ -5,9 +5,8 @@ import Newsletter from "../components/Newsletter";
 const Landing = () => {
   return (
     <PagesLayout>
-      <div>Landing</div>
+      <div className="text-4xl text-blue-700">Landing</div>
     </PagesLayout>
-
   );
 };
 
