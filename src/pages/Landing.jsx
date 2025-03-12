@@ -16,9 +16,8 @@ const Landing = () => {
         )}
       </div>
 
-
-
     </PagesLayout>
+
   );
 };
 
