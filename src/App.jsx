@@ -13,6 +13,8 @@ function App() {
         <Route path="/books" element={<Books />} />
         <Route path="/single-book" element={<SingleBooks />} />
         <Route path="/add-book" element={<AddBooks />} />
+        <Route path="/books/:id" element={<SingleBooks />} />
+
       </Routes>
     </BrowserRouter>
   );
