@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import BookDetails from '../components/Bookdetails'
 
 const SingleBooks = () => {
   return (
     <div>
-      <h1>Single Books</h1>
-      <Footer/>
+      <BookDetails />
     </div>
   )
 }

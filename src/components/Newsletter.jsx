@@ -4,7 +4,7 @@ import background from '../assets/images/background1.jpg'
 const Newsletter = () => {
     return (
         <div
-            className="h-[350px] bg-center bg-no-repeat bg-cover text-white flex items-center justify-center mx-20 flex-col gap-10"
+            className="h-[350px] bg-center bg-no-repeat bg-cover text-white flex items-center justify-center mx-20 flex-col gap-10 mb-10"
             style={{ backgroundImage: `url(${background})` }}>
             <div className="text-center flex flex-col gap-2">
                 <h2 className="text-5xl font-bold mb-2">Join Newsletter</h2>
