@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 text-white p-2 flex items-center justify-between md:flex-row flex-col md:p-4">
-      {/* Logo and Name of Library for both mobile and big screens*/}
+      {/* Logo and Na-  me of Library for both mobile and big screens*/}
 
       <div className="w-full flex justify-between items-center md:w-auto">
         <div className="flex items-center space-x-4">
