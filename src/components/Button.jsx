@@ -2,10 +2,11 @@ import React from 'react';
 
 const Button = (props) => {
   return (
-    <div className="bg-yellow-500 text-black px-4 py-2 rounded-md font-semibold hidden md:block w-30">
+    <button className="bg-red-600 text-white px-6 py-2 rounded-full font-semibold w-32 md:block">
       {props.text}
-    </div>
+    </button>
   );
 }
 
 export default Button;
+
