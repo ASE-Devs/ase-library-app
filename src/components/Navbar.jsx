@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import { FaSearch, FaTimes, FaBars } from "react-icons/fa";
 import Form from "../components/Form";
-import { Link } from "react-router-dom"; // Import Link for routing
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  // Handle smooth navigation to contact section
+  const handleContactClick = () => {
+    navigate("/about#contact");
+    setIsMenuOpen(false);
+  };
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -17,9 +25,9 @@ const Navbar = () => {
 
         {/* Library Name */}
         <div className="flex items-center space-x-4">
-          <span className="text-4xl font-bold text-red-600">
+          <Link to="/" className="text-4xl font-bold text-red-600">
             ASE <span className="text-[#232F3E] text-2xl">Library</span>
-          </span>
+          </Link>
         </div>
 
         {/* Desktop Search Bar */}
@@ -53,13 +61,13 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-6 text-lg">
           <Link to="/" className="hover:text-red-600 text-[#232F3E] font-semibold">Home</Link>
-          <a href="#" className="hover:text-red-600 text-[#232F3E] font-semibold">Categories</a>
-          <a href="#" className="hover:text-red-600 text-[#232F3E] font-semibold">About</a>
-
-          {/* ✅ Link to Books Page */}
+          <Link to="/about" className="hover:text-red-600 text-[#232F3E] font-semibold">About</Link>
           <Link to="/books" className="hover:text-red-600 text-[#232F3E] font-semibold">Library</Link>
-
-          <a href="#" className="hover:text-red-600 text-[#232F3E] font-semibold">Contact</a>
+          <button
+            onClick={handleContactClick}
+            className="hover:text-red-600 text-[#232F3E] font-semibold">
+            Contact
+          </button>
         </div>
 
         {/* Add Book Button */}
@@ -70,6 +78,20 @@ const Navbar = () => {
           Add Book
         </button>
       </nav>
+
+      {/* Mobile Navigation Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white shadow-lg py-4 px-6 space-y-4 text-lg">
+          <Link to="/" className="block hover:text-red-600" onClick={() => setIsMenuOpen(false)}>Home</Link>
+          <Link to="/about" className="block hover:text-red-600" onClick={() => setIsMenuOpen(false)}>About</Link>
+          <Link to="/books" className="block hover:text-red-600" onClick={() => setIsMenuOpen(false)}>Library</Link>
+          <button
+            onClick={handleContactClick}
+            className="block hover:text-red-600">
+            Contact
+          </button>
+        </div>
+      )}
 
       {/* Modal Overlay with Blur */}
       {isModalOpen && (
