@@ -13,7 +13,7 @@ const book = {
     publicationInfo: "Published in January 2025",
 };
 
-// Sample reviews data
+// Sample reviews dataa
 const reviews = [
     {
         id: 1,
