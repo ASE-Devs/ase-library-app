@@ -4,6 +4,7 @@ import Books from "./pages/Books";
 import Landing from "./pages/Landing";
 import SingleBooks from "./pages/SingleBooks";
 import AddBooks from "./pages/AddBooks";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/single-book" element={<SingleBooks />} />
         <Route path="/add-book" element={<AddBooks />} />
         <Route path="/books/:id" element={<SingleBooks />} />
+        <Route path="/about" element={<About />} />
+
 
       </Routes>
     </BrowserRouter>
