@@ -82,7 +82,7 @@ const ContactForm = () => {
         </form>
       </div>
 
-      {/* Conatct Details */}
+      {/* Contact Details */}
 
       <div className="space-y-10 text-gray-700 justify-around" >
       <div className="font-semibold justify-self-auto text-2xl">
