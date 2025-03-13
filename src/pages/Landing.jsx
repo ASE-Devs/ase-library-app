@@ -6,9 +6,9 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import image from '../assets/images/another.jpg'
 
-const LandingPage = () => {
+const Landing = () => {
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   return (
-
     <PagesLayout>
 
       <HeroSection image={image} title={"A library is a place where you can lose your innocence without losing your virginity."} subtitle={'Germaine Greer'} buttonText={'Browse More'} />
@@ -23,4 +23,8 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Landing;
+
+
+
+
