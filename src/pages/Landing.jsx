@@ -5,6 +5,7 @@ import Bookcard from "../components/Bookcard";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import image from '../assets/images/another.jpg'
+import Form from "../components/Form";
 
 const Landing = () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -18,6 +19,7 @@ const Landing = () => {
         )}
       </div>
       <Newsletter />
+      <Form />
 
     </PagesLayout>
   );
