@@ -19,7 +19,6 @@ const Landing = () => {
         )}
       </div>
       <Newsletter />
-      <Form />
 
     </PagesLayout>
   );
