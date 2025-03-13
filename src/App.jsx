@@ -4,6 +4,7 @@ import Books from "./pages/Books";
 import Landing from "./pages/Landing";
 import SingleBooks from "./pages/SingleBooks";
 import AddBooks from "./pages/AddBooks";
+import DeleteBookPage from "./pages/DeleteBookPage";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/single-book" element={<SingleBooks />} />
         <Route path="/add-book" element={<AddBooks />} />
         <Route path="/books/:id" element={<SingleBooks />} />
-
+        <Route path="/delete/:id" element={<DeleteBookPage />} />
       </Routes>
     </BrowserRouter>
   );
