@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import PagesLayout from "../layout/PagesLayout";
+import EditBook from "./Edit";
 
 // Sample book data
 const book = {
@@ -86,14 +87,19 @@ const BookDetails = () => {
                         {/* Description */}
                         <p className="text-gray-700 leading-relaxed mb-6">{book.description}</p>
                         <p className="text-gray-400 text-xs">{book.publicationInfo}</p>
-
-                        {/* Action Buttons */}
+                         {/* Action Buttons */}
                         <div className="mt-6 flex gap-4">
                             <button className="bg-slate-800 hover:bg-slate-900 text-white px-6 py-2 rounded-lg transition duration-300 shadow-md">
                                 Add to Library
                             </button>
                             <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-2 rounded-lg transition duration-300 shadow-md">
                                 Read Now
+                            </button>
+                            <button onClick={() => {isEditing && (
+                             console.log("EditBook component should render"),
+                              <EditBook id={book.id} title={book.title} author={book.author} rating={book.rating} description={book.description} onClose={() => setIsEditing(false)} />
+)}} className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-300 shadow-md">
+                                Edit
                             </button>
                         </div>
                     </div>
