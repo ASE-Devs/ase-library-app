@@ -63,6 +63,7 @@ const Navbar = () => {
           <Link to="/" className="hover:text-red-600 text-[#232F3E] font-semibold">Home</Link>
           <Link to="/about" className="hover:text-red-600 text-[#232F3E] font-semibold">About</Link>
           <Link to="/books" className="hover:text-red-600 text-[#232F3E] font-semibold">Library</Link>
+          {/* <Link to="/books" className="hover:text-red-600 text-[#232F3E] font-semibold">Library</Link> */}
           <button
             onClick={handleContactClick}
             className="hover:text-red-600 text-[#232F3E] font-semibold">

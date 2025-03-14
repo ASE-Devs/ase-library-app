@@ -5,7 +5,7 @@ const HeroSection = ({ title, subtitle, buttonText, image }) => {
   return (
     <div>
       {/* The navigation links at the top of the hero section */}
-      <nav className="w-full bg-white text-black py-4 px-8 flex justify-center space-x-6 shadow-sm">
+      {/* <nav className="w-full bg-white text-black py-4 px-8 flex justify-center space-x-6 shadow-sm">
         <Link to="/" className="hover:text-yellow-500 font-semibold">
           Home
         </Link>
@@ -24,10 +24,10 @@ const HeroSection = ({ title, subtitle, buttonText, image }) => {
         <Link to="/contact" className="hover:text-yellow-500 font-semibold">
           Contact
         </Link>
-      </nav>
+      </nav> */}
 
       {/* Hero Section */}
-      <div className="grid grid-cols-2 items-center bg-pink-200 p-6 gap-4 w-[95%] mx-auto rounded-lg ">
+      <div className="grid grid-cols-2 items-center bg-pink-200 p-6 gap-4 w-[95%]  mx-auto rounded-lg ">
         {/* The text section props that can be called in the various pages and modified */}
         <div className="text-center md:text-left">
           <h2 className="text-4xl font-bold">{title}</h2>
@@ -35,7 +35,7 @@ const HeroSection = ({ title, subtitle, buttonText, image }) => {
 
           {/* The button text component that can be modified and also called as a property {prop}*/}
           {buttonText && (
-            <button className="mt-4 px-6 py-2 bg-yellow-500 text-white font-semibold rounded-lg">
+            <button className="mt-4 px-6 py-2 bg-red-600 text-white font-semibold rounded-lg">
               {buttonText}
             </button>
           )}
@@ -55,5 +55,3 @@ const HeroSection = ({ title, subtitle, buttonText, image }) => {
 };
 
 export default HeroSection;
-
-
